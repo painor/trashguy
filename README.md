@@ -1,5 +1,5 @@
 # TrashGuy
-![Banner](images/banner.png)
+![Banner](https://raw.githubusercontent.com/painor/trashguy/master/images/banner.png)
 The [REDACTED] TrashGuy script, written in NodeJS/Javascript!
 
 
