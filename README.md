@@ -73,3 +73,16 @@ SOONtm
                                wrapper:TrashGuy.Symbols.WRAPPER_BLOCK_MONO})  # triple backticks
 
     console.log(trashAnimation)  # outputs entire animation with each frame separated by newline
+
+
+#
+
+
+Like what you see?
+---------------------------
+⭐ Star the repository and share with your friends! ⭐
+
+
+*Really* like what you see?
+---------------------------
+*Feel free to donate so we can get some marshmallows* 😁
