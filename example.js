@@ -1,2 +1,7 @@
 const { TrashGuy } = require("./src/trashguy")
-console.log(new TrashGuy('A B C').animate())
+for (const val of new TrashGuy('A B C')) {
+    console.log(val)
+}
+for (const val of new TrashGuy('A B C')) {
+    console.log(val)
+}

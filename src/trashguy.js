@@ -82,7 +82,7 @@ class TrashGuy {
         this.frameStart = args.frameStart
 
         this.index = args.frameStart - 1
-
+        this.defaultIndex = this.index
         const maxTotalFrames = this.length
         const maxAvailableFrames = maxTotalFrames - this.frameStart
         if (args.frameStart < 0) {
@@ -104,6 +104,17 @@ class TrashGuy {
         }
 
         this.slices = { frameStart: args.frameStart, framesMax: args.framesMax }
+    }
+
+    * [Symbol.iterator]() {
+        while (true) {
+            const item = this.getNext()
+            if (!item) {
+                this.index = this.defaultIndex
+                break
+            }
+            yield item
+        }
     }
 
     animate() {
@@ -136,10 +147,12 @@ class TrashGuy {
     }
 
     getNext() {
+
         this.index++
         try {
-            return FrameEngine.getFrame(this.slices, this.sprites,this.index)
+            return FrameEngine.getFrame(this.slices, this.sprites, this.index)
         } catch (e) {
+            this.index = 0
             return false
         }
     }
