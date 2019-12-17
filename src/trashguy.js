@@ -16,13 +16,13 @@
 // =========================================================================== //
 const FrameEngine = require('./_frameEngine')
 Symbols = {
-    DEFAULT_INPUT: ['\U0001F353', '\U0001F34A', '\U0001F345'],
+    DEFAULT_INPUT: ['\u{0001F353}', '\u{0001F34A}', '\u{0001F345}'],
     SPACER_DEFAULT: '\u0020',
     SPACER_WIDE: '\u2800\u0020',
     SPACER_EMOJI: '\u2796',
     WRAPPER_MONOSPACE: '`',
     WRAPPER_BLOCK_MONO: '```',
-    SPRITE_CAN: '\U0001F5D1',
+    SPRITE_CAN: '\u{0001F5D1}',
     SPRITE_LEFT: '<(^_^ <)',
     SPRITE_RIGHT: '(> ^_^)>',
 }

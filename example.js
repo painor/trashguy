@@ -1,5 +1,5 @@
-const { TrashGuy } = require("./src/trashguy")
+const TrashGuy = require("./index")
 const s = new TrashGuy('A B C')
-for (const pos of s){
+for (const pos of s) {
     console.log(pos)
 }
