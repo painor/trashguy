@@ -15,24 +15,25 @@
 // copies or substantial portions of the Software.                             //
 // =========================================================================== //
 const FrameEngine = require('./_frameEngine')
-const Symbols = {
-    DEFAULT_INPUT: ['\u{0001F353}', '\u{0001F34A}', '\u{0001F345}'],
-    SPACER_DEFAULT: '\u0020',
-    SPACER_WIDE: '\u2800\u0020',
-    SPACER_EMOJI: '\u2796',
-    WRAPPER_MONOSPACE: '`',
-    WRAPPER_BLOCK_MONO: '```',
-    SPRITE_CAN: '\u{0001F5D1}',
-    SPRITE_LEFT: '<(^_^ <)',
-    SPRITE_RIGHT: '(> ^_^)>',
-}
 
 class TrashGuy {
+    static Symbols = {
+        DEFAULT_INPUT: ['\u{0001F353}', '\u{0001F34A}', '\u{0001F345}'],
+        SPACER_DEFAULT: '\u0020',
+        SPACER_WIDE: '\u2800\u0020',
+        SPACER_EMOJI: '\u2796',
+        WRAPPER_MONOSPACE: '`',
+        WRAPPER_BLOCK_MONO: '```',
+        SPRITE_CAN: '\u{0001F5D1}',
+        SPRITE_LEFT: '<(^_^ <)',
+        SPRITE_RIGHT: '(> ^_^)>',
+    }
+
     static DEFAULT_OPTIONS = {
-        spriteCan: Symbols.SPRITE_CAN,
-        spriteLeft: Symbols.SPRITE_LEFT,
-        spriteRight: Symbols.SPRITE_RIGHT,
-        spacer: Symbols.SPACER_DEFAULT,
+        spriteCan: TrashGuy.Symbols.SPRITE_CAN,
+        spriteLeft: TrashGuy.Symbols.SPRITE_LEFT,
+        spriteRight: TrashGuy.Symbols.SPRITE_RIGHT,
+        spacer: TrashGuy.Symbols.SPACER_DEFAULT,
         wrapper: '',
         frameStart: 0,
         framesMax: null
@@ -44,10 +45,10 @@ class TrashGuy {
      * @param options
      */
     constructor(trashItems, options = {
-        spriteCan: Symbols.SPRITE_CAN,
-        spriteLeft: Symbols.SPRITE_LEFT,
-        spriteRight: Symbols.SPRITE_RIGHT,
-        spacer: Symbols.SPACER_DEFAULT,
+        spriteCan: TrashGuy.Symbols.SPRITE_CAN,
+        spriteLeft: TrashGuy.Symbols.SPRITE_LEFT,
+        spriteRight: TrashGuy.Symbols.SPRITE_RIGHT,
+        spacer: TrashGuy.Symbols.SPACER_DEFAULT,
         wrapper: '',
         frameStart: 0,
         framesMax: null

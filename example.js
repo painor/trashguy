@@ -1,5 +1,4 @@
-const TrashGuy = require("./index")
-const s = new TrashGuy('A B C')
-for (const pos of s) {
+const TrashGuy = require("trashguy")
+for (const pos of new TrashGuy('A B C')) {
     console.log(pos)
 }
