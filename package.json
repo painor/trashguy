@@ -12,6 +12,12 @@
     "emoji",
     "zac"
   ],
+  "files": [
+    "src/*",
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
   "author": "painor",
   "license": "AGPL"
 }
