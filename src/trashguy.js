@@ -15,7 +15,7 @@
 // copies or substantial portions of the Software.                             //
 // =========================================================================== //
 const FrameEngine = require('./_frameEngine')
-Symbols = {
+const Symbols = {
     DEFAULT_INPUT: ['\u{0001F353}', '\u{0001F34A}', '\u{0001F345}'],
     SPACER_DEFAULT: '\u0020',
     SPACER_WIDE: '\u2800\u0020',
@@ -59,12 +59,12 @@ class TrashGuy {
         } else if (typeof trashItems === 'string') {
             sanTrashItems = trashItems.split(" ")
         } else if (trashItems.some(item => !item)) {
-            throw new Error('invalid input' + trashItems.filter(function (item, idx) {
+            throw new Error('invalid input' + trashItems.filter(function (item) {
                 return !item
             })
             )
         } else if (Array.isArray(trashItems)) {
-            sanTrashItems = trashItems.filter(function (item, idx) {
+            sanTrashItems = trashItems.filter(function (item) {
                 return item !== " "
             })
         } else {
