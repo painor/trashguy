@@ -64,7 +64,7 @@ class FrameEngine {
                 const fg = range(2, fgSizes[i] + 2)
                 const midFg = median(fg)
                 const upperFg = fg.slice(0, midFg - 2)
-                const lowerFg = [upperFg.slice(0, -1).reverse(), 1, 0]
+                const lowerFg = [...upperFg.slice(0, -1).reverse(), 1, 0]
                 for (const pos of upperFg) {
                     if (tempFrameIndex === index) {
                         return { position: pos, forward: true, itemIndex: i }
@@ -74,6 +74,7 @@ class FrameEngine {
 
                 for (const pos of lowerFg) {
                     if (tempFrameIndex === index) {
+
                         return { position: pos, forward: false, itemIndex: i }
                     }
 

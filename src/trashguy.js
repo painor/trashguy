@@ -152,7 +152,6 @@ class TrashGuy {
         try {
             return FrameEngine.getFrame(this.slices, this.sprites, this.index)
         } catch (e) {
-            this.index = 0
             return false
         }
     }

@@ -1,7 +1,5 @@
 const { TrashGuy } = require("./src/trashguy")
-for (const val of new TrashGuy('A B C')) {
-    console.log(val)
-}
-for (const val of new TrashGuy('A B C')) {
-    console.log(val)
+const s = new TrashGuy('A B C')
+for (const pos of s){
+    console.log(pos)
 }
