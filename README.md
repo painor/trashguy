@@ -86,3 +86,6 @@ Like what you see?
 *Really* like what you see?
 ---------------------------
 *Feel free to donate so we can get some marshmallows* 😁
+
+
+**Inspired by [The Official TrashGuy](https://github.com/trash-guy/TrashGuy)**
